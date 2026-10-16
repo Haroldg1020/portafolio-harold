@@ -31,8 +31,27 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth dark overflow-x-hidden">
-      <body className={`${spaceGrotesk.variable} font-sans antialiased bg-carbon text-gray-100 min-h-screen selection:bg-chrome/30 selection:text-white overflow-x-hidden`}>
+    <html lang={locale} className="scroll-smooth dark overflow-x-hidden" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('theme');
+                  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (saved === 'light' || (!saved && !prefersDark)) {
+                    document.documentElement.classList.remove('dark');
+                  } else {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={`${spaceGrotesk.variable} font-sans antialiased bg-page text-primary min-h-screen selection:bg-accent/20 selection:text-accent overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

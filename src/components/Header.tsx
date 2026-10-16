@@ -6,6 +6,8 @@ import { useRef, useTransition, useEffect, useState } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
+import ThemeToggle from '@/components/ThemeToggle';
+
 export default function Header() {
   const t = useTranslations('Navigation');
   const pathname = usePathname();
@@ -69,7 +71,7 @@ export default function Header() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="fixed top-0 left-0 right-0 z-50 px-6 py-5 md:py-6 md:px-12 backdrop-blur-md bg-carbon/60 border-b border-white/5"
+        className="fixed top-0 left-0 right-0 z-50 px-6 py-5 md:py-6 md:px-12 backdrop-blur-md bg-header border-b border-subtle transition-colors duration-300"
       >
         <div className="w-full flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-3 group">
@@ -78,10 +80,10 @@ export default function Header() {
               <img 
                 src="/logo-hg.png" 
                 alt="HG Logo" 
-                className="h-full w-auto object-contain"
+                className="h-full w-auto object-contain dark:brightness-100 brightness-90"
               />
             </div>
-            <span className="font-bold tracking-widest text-sm text-white hidden sm:block">
+            <span className="font-bold tracking-widest text-sm text-primary hidden sm:block">
               HG
             </span>
           </a>
@@ -92,36 +94,39 @@ export default function Header() {
               <a 
                 key={link.name} 
                 href={link.href}
-                className="group text-[10px] md:text-xs font-bold tracking-widest text-gray-400 hover:text-red-500 transition-colors uppercase flex gap-2 items-baseline"
+                className="group text-[10px] md:text-xs font-bold tracking-widest text-secondary hover:text-red-500 transition-colors uppercase flex gap-2 items-baseline"
               >
-                <span className="text-gray-600 font-light group-hover:text-red-400 transition-colors">{link.num}</span>
+                <span className="text-muted font-light group-hover:text-red-400 transition-colors">{link.num}</span>
                 <span>{link.name}</span>
               </a>
             ))}
           </nav>
 
-          <div className="flex items-center gap-3 md:gap-6">
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Theme Toggle (Light / Dark) */}
+            <ThemeToggle />
+
             {/* Language Switcher */}
-            <div className="flex items-center gap-1 border-l border-white/10 pl-3 md:pl-6">
+            <div className="flex items-center gap-1 border-l border-subtle pl-3 md:pl-4">
               <button 
                 type="button"
                 onClick={() => handleSelectLocale('es')}
                 disabled={isPending}
                 aria-label="Cambiar a Español"
                 className={`px-1.5 py-0.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all duration-200 rounded ${
-                  currentLocale === 'es' ? 'text-white bg-white/10' : 'text-gray-400 hover:text-white'
+                  currentLocale === 'es' ? 'text-primary bg-black/10 dark:bg-white/10 font-black' : 'text-secondary hover:text-primary'
                 } ${isPending ? 'opacity-50 cursor-wait' : 'cursor-pointer'}`}
               >
                 ES
               </button>
-              <span className="text-gray-600 text-[10px] select-none">/</span>
+              <span className="text-muted text-[10px] select-none">/</span>
               <button 
                 type="button"
                 onClick={() => handleSelectLocale('en')}
                 disabled={isPending}
                 aria-label="Switch to English"
                 className={`px-1.5 py-0.5 text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all duration-200 rounded ${
-                  currentLocale === 'en' ? 'text-white bg-white/10' : 'text-gray-400 hover:text-white'
+                  currentLocale === 'en' ? 'text-primary bg-black/10 dark:bg-white/10 font-black' : 'text-secondary hover:text-primary'
                 } ${isPending ? 'opacity-50 cursor-wait' : 'cursor-pointer'}`}
               >
                 EN
@@ -133,7 +138,7 @@ export default function Header() {
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
-              className="md:hidden p-2 text-gray-400 hover:text-white transition-colors rounded-lg bg-white/5 border border-white/10"
+              className="md:hidden p-2 text-secondary hover:text-primary transition-colors rounded-lg bg-black/5 dark:bg-white/5 border border-subtle cursor-pointer"
             >
               {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
@@ -149,7 +154,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="fixed inset-0 top-[69px] z-40 bg-carbon/95 backdrop-blur-2xl px-6 py-10 flex flex-col justify-between md:hidden border-b border-white/10"
+            className="fixed inset-0 top-[69px] z-40 bg-page/95 backdrop-blur-2xl px-6 py-10 flex flex-col justify-between md:hidden border-b border-subtle"
           >
             <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (
@@ -157,7 +162,7 @@ export default function Header() {
                   key={link.name} 
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center gap-4 text-xl font-bold tracking-widest uppercase text-gray-300 hover:text-red-500 transition-colors py-2 border-b border-white/5"
+                  className="flex items-center gap-4 text-xl font-bold tracking-widest uppercase text-primary hover:text-red-500 transition-colors py-2 border-b border-subtle"
                 >
                   <span className="text-xs font-mono text-red-500 font-normal">{link.num}</span>
                   <span>{link.name}</span>
@@ -165,11 +170,11 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="pt-6 border-t border-white/10">
-              <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">
+            <div className="pt-6 border-t border-subtle">
+              <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-secondary">
                 HAROLD GUERRERO — {new Date().getFullYear()}
               </p>
-              <p className="text-[10px] tracking-widest uppercase text-gray-600 mt-1">
+              <p className="text-[10px] tracking-widest uppercase text-muted mt-1">
                 CALI, COLOMBIA
               </p>
             </div>

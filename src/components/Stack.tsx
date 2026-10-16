@@ -18,7 +18,7 @@ export default function Stack() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl font-bold mb-16 text-center text-white"
+        className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary"
       >
         {t('title')}
       </motion.h2>
@@ -32,9 +32,9 @@ export default function Stack() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
             whileHover={{ y: -5, scale: 1.02 }}
-            className="glass-dark metal-edge p-6 rounded-xl flex items-center justify-center cursor-pointer group"
+            className="glass-dark metal-edge p-6 rounded-xl flex items-center justify-center cursor-pointer group hover:border-accent/40 shadow-sm"
           >
-            <span className="text-gray-400 font-medium group-hover:text-white transition-colors duration-300">
+            <span className="text-secondary font-medium group-hover:text-accent transition-colors duration-300">
               {tech}
             </span>
           </motion.div>

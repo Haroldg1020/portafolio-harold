@@ -17,12 +17,12 @@ export default function Experience() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl font-bold mb-16 text-center text-white"
+        className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary"
       >
         {t('title')}
       </motion.h2>
 
-      <div className="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0">
+      <div className="relative border-l border-subtle ml-4 md:ml-0 md:pl-0">
         {experiences.map((exp, index) => (
           <motion.div 
             key={index}
@@ -33,14 +33,14 @@ export default function Experience() {
             className="mb-12 relative pl-8 md:pl-16 group"
           >
             {/* Hardware node */}
-            <div className="absolute left-[-5px] md:left-[-5px] top-1 w-2.5 h-2.5 bg-carbon border border-metal rounded-full group-hover:bg-white group-hover:shadow-[0_0_10px_#fff] transition-all duration-300"></div>
+            <div className="absolute left-[-5px] md:left-[-5px] top-1 w-2.5 h-2.5 bg-page border border-accent rounded-full group-hover:bg-accent group-hover:shadow-[0_0_10px_rgba(204,41,43,0.5)] transition-all duration-300"></div>
             
-            <div className="glass-dark metal-edge p-6 rounded-xl hover:border-white/30 transition-colors duration-300 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-white/10 transition-colors"></div>
+            <div className="glass-dark metal-edge p-6 rounded-xl hover:border-accent/40 transition-colors duration-300 relative overflow-hidden shadow-sm">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 dark:bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/10 transition-colors"></div>
               
-              <span className="text-xs text-metal tracking-wider font-semibold mb-2 block">{exp.year}</span>
-              <h3 className="text-xl font-bold text-white mb-3">{exp.role}</h3>
-              <p className="text-gray-400 font-light leading-relaxed">{exp.desc}</p>
+              <span className="text-xs text-accent tracking-wider font-semibold font-mono mb-2 block">{exp.year}</span>
+              <h3 className="text-xl font-bold text-primary mb-3">{exp.role}</h3>
+              <p className="text-secondary font-light leading-relaxed">{exp.desc}</p>
             </div>
           </motion.div>
         ))}

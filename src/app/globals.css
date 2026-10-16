@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-carbon: #08080a;
   --color-carbon-light: #121214;
@@ -10,31 +12,82 @@
   /* Metallic red accent */
   --color-accent: #cc292b;
   --color-accent-dark: #8a1718;
+
+  /* Adaptive theme tokens */
+  --color-page: var(--bg-page);
+  --color-card: var(--bg-card);
+  --color-card-solid: var(--bg-card-solid);
+  --color-subtle: var(--border-subtle);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+  --color-header: var(--header-bg);
   
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
+:root {
+  --bg-page: #f8f9fa;
+  --bg-card: rgba(255, 255, 255, 0.82);
+  --bg-card-solid: #ffffff;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --header-bg: rgba(248, 249, 250, 0.78);
+  --dots-color: rgba(0, 0, 0, 0.08);
+  --outline-stroke: rgba(15, 23, 42, 0.3);
+  --metal-edge-shadow: 0 0 20px rgba(0, 0, 0, 0.04) inset;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  --bg-page: #08080a;
+  --bg-card: rgba(0, 0, 0, 0.45);
+  --bg-card-solid: #121214;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --header-bg: rgba(8, 8, 10, 0.7);
+  --dots-color: rgba(255, 255, 255, 0.15);
+  --outline-stroke: rgba(255, 255, 255, 0.2);
+  --metal-edge-shadow: 0 0 15px rgba(255, 255, 255, 0.03) inset;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
 @layer base {
   body {
-    @apply bg-carbon text-gray-200;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
   }
   
   .glass-dark {
-    @apply bg-black/40 backdrop-blur-lg border border-white/5;
+    background-color: var(--bg-card);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--border-subtle);
   }
   
   .metal-edge {
-    @apply border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.03)_inset];
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--metal-edge-shadow);
   }
 
   .text-gradient-metal {
-    @apply bg-clip-text text-transparent bg-gradient-to-b from-white via-gray-300 to-gray-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-gray-900 via-gray-700 to-gray-500 dark:from-white dark:via-gray-300 dark:to-gray-500;
   }
   
   .text-gradient-accent {
@@ -43,7 +96,7 @@
 
   /* Massive outline text effect */
   .text-outline {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 1px var(--outline-stroke);
     color: transparent;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -58,17 +111,17 @@
 /* Custom Webkit Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: var(--color-carbon);
+  background-color: var(--bg-page);
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--border-subtle);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #111111;
+  background: var(--text-muted);
   border-radius: 5px;
-  border: 2px solid var(--color-carbon);
+  border: 2px solid var(--bg-page);
 }
 
 body.is-scrolling ::-webkit-scrollbar-thumb,

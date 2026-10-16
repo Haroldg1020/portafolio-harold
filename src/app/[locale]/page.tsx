@@ -30,7 +30,7 @@ export default async function Home({
       <Contact />
       
       {/* Footer minimalista */}
-      <footer className="py-8 text-center text-sm text-gray-600 border-t border-white/5 mt-20">
+      <footer className="py-8 text-center text-sm text-muted border-t border-subtle mt-20">
         <p>© {new Date().getFullYear()} Harold Guerrero. {t('rights')}</p>
       </footer>
     </main>
