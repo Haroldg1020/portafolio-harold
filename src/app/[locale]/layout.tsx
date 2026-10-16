@@ -3,6 +3,7 @@ import {getMessages, setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import type {Metadata} from 'next';
 import { Space_Grotesk } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
 
 const spaceGrotesk = Space_Grotesk({
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
