@@ -1,0 +1,55 @@
+{
+  "Navigation": {
+    "about": "Acerca",
+    "experience": "Experiencia",
+    "stack": "Stack",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "name": "HAROLD GUERRERO",
+    "title": "Ingeniero de Sistemas & Ciencias de la Computación",
+    "role": "Ingeniero de Sistemas & Arquitecto de Software",
+    "areas": "Ingeniería · IA & LLMs · Datos · Software",
+    "portfolio": "Portafolio",
+    "location": "Cali, Colombia",
+    "hook": "Transformando lógica compleja en sistemas precisos, escalables y estéticamente impecables.",
+    "scroll": "Scroll para explorar"
+  },
+  "About": {
+    "title": "Acerca de",
+    "description": "Mi enfoque lógico y pasión por el código estructurado me impulsan a diseñar soluciones escalables. Combino la precisión de la ingeniería con un ojo para el diseño oscuro y minimalista, creando experiencias fluidas donde el hardware se encuentra con el software.",
+    "profile": "Datos del Perfil",
+    "roleLabel": "Rol",
+    "role": "Ingeniero de Sistemas",
+    "focusLabel": "Enfoque",
+    "focus": "Frontend & Arquitectura",
+    "locationLabel": "Ubicación",
+    "location": "Global"
+  },
+  "Experience": {
+    "title": "Experiencia",
+    "role1": "Arquitecto Frontend",
+    "desc1": "Diseñé y lideré la implementación de arquitecturas frontend escalables.",
+    "year1": "2023 - Presente",
+    "role2": "Ingeniero de Sistemas",
+    "desc2": "Optimicé flujos de datos complejos e integraciones backend.",
+    "year2": "2020 - 2023"
+  },
+  "Stack": {
+    "title": "Tech Stack"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "cta": "¿Construimos el siguiente nivel?",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo",
+    "messageLabel": "Mensaje",
+    "send": "Enviar Mensaje",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

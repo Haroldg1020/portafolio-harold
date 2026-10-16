@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-carbon: #08080a;
+  --color-carbon-light: #121214;
+  --color-metal: #a1a1aa;
+  --color-chrome: #e4e4e7;
+  --color-chrome-bright: #ffffff;
+  
+  /* Metallic red accent */
+  --color-accent: #cc292b;
+  --color-accent-dark: #8a1718;
+  
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-carbon text-gray-200;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-lg border border-white/5;
+  }
+  
+  .metal-edge {
+    @apply border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.03)_inset];
+  }
+
+  .text-gradient-metal {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white via-gray-300 to-gray-500;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-[#ff4d4f] to-[#b81d1d];
+  }
+
+  /* Massive outline text effect */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .text-outline:hover {
+    -webkit-text-stroke: 1px var(--color-accent);
+    color: rgba(204, 41, 43, 0.08);
+    text-shadow: 0 0 30px rgba(204, 41, 43, 0.3);
+  }
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-carbon);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 5px;
+  border: 2px solid var(--color-carbon);
+}
+
+body.is-scrolling ::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-accent);
+}

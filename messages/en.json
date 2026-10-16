@@ -1,0 +1,55 @@
+{
+  "Navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "name": "HAROLD GUERRERO",
+    "title": "Systems & Computer Science Engineer",
+    "role": "Systems Engineer & Software Architect",
+    "areas": "Engineering · AI & LLMs · Data · Software",
+    "portfolio": "Portfolio",
+    "location": "Cali, Colombia",
+    "hook": "Transforming complex logic into precise, scalable, and aesthetically impeccable systems.",
+    "scroll": "Scroll to explore"
+  },
+  "About": {
+    "title": "About Me",
+    "description": "My logical approach and passion for structured code drive me to architect scalable solutions. I blend engineering precision with an eye for dark, minimalist design, creating seamless experiences where hardware meets software.",
+    "profile": "Profile Data",
+    "roleLabel": "Role",
+    "role": "Systems Engineer",
+    "focusLabel": "Focus",
+    "focus": "Frontend & Architecture",
+    "locationLabel": "Location",
+    "location": "Global"
+  },
+  "Experience": {
+    "title": "Experience",
+    "role1": "Frontend Architect",
+    "desc1": "Designed and led the implementation of scalable frontend architectures.",
+    "year1": "2023 - Present",
+    "role2": "Systems Engineer",
+    "desc2": "Optimized complex data flows and backend integrations.",
+    "year2": "2020 - 2023"
+  },
+  "Stack": {
+    "title": "Tech Stack"
+  },
+  "Contact": {
+    "title": "Contact",
+    "cta": "Shall we build the next level?",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "send": "Send Message",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}
