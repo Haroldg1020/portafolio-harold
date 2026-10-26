@@ -1,0 +1,28 @@
+export const metadata = {
+  title: 'Process scheduling algorithms',
+  summary: 'C++ implementations of FCFS, SJF, Round Robin and STCF that simulate how an operating system shares the CPU.',
+  date: '2025-09-15',
+  tags: ['C++', 'Operating Systems', 'Algorithms'],
+  repo: 'https://github.com/Haroldg1020/scheduling',
+  featured: true,
+  status: 'done',
+}
+
+## The challenge
+
+Understand hands-on how an operating system decides which process gets the CPU, and how each policy affects waiting and response times.
+
+## The solution
+
+I implemented four scheduling algorithms, each as a standalone program that reads a list of processes (arrival time and burst) and computes their execution:
+
+- **FCFS** (First Come, First Served): strict arrival order, no preemption.
+- **SJF** (Shortest Job First): picks the shortest available job, non-preemptive.
+- **Round Robin**: time slices with a configurable *quantum*.
+- **STCF / PSJF**: the preemptive version of SJF; the process with the least remaining time takes the CPU.
+
+The repository includes sample inputs to compare the results of each algorithm.
+
+## What I learned
+
+The trade-offs between fairness, response time and CPU utilization, and how to model events over time with simple data structures.

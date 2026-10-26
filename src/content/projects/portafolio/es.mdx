@@ -1,0 +1,27 @@
+export const metadata = {
+  title: 'Portafolio personal',
+  summary: 'Este sitio: un portafolio bilingüe con modo claro/oscuro, contenido en MDX y animaciones cuidadas.',
+  date: '2026-10-26',
+  tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MDX'],
+  repo: 'https://github.com/Haroldg1020/portafolio-harold',
+  demo: 'https://portafolio-harold.vercel.app',
+  featured: true,
+  status: 'in-progress',
+}
+
+## El reto
+
+Quería un lugar propio para mostrar lo que sé y lo que construyo, que fuera fácil de mantener: agregar un proyecto nuevo no debería implicar tocar componentes.
+
+## La solución
+
+- **Next.js 16 (App Router)** con Server Components, para enviar el mínimo JavaScript al navegador.
+- **next-intl** para tener todo en español e inglés, con rutas `/es` y `/en`.
+- **Proyectos y notas en MDX**: cada proyecto es un archivo con sus metadatos y su historia.
+- **Tailwind CSS 4** con tokens de color propios para el modo claro y oscuro.
+- **Motion** y **Lenis** para animaciones y scroll suave, respetando `prefers-reduced-motion`.
+- Formulario de contacto real con **Server Actions** y **Resend**.
+
+## Qué aprendí
+
+A pensar el sitio como un producto: SEO por idioma, imágenes Open Graph generadas, navegación con teclado (prueba <kbd>Ctrl</kbd> + <kbd>K</kbd>) y rendimiento medido con Vercel Speed Insights.

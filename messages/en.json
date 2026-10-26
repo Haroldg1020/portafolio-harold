@@ -1,42 +1,104 @@
 {
+  "Metadata": {
+    "title": "Harold Guerrero · Systems Engineer",
+    "description": "Portfolio of Harold Guerrero, Systems Engineer based in Cali, Colombia. Projects, notes and experience in software, data and AI.",
+    "ogRole": "Systems Engineer · Software · Data · AI"
+  },
   "Navigation": {
+    "home": "Home",
     "about": "About",
+    "projects": "Projects",
     "experience": "Experience",
     "stack": "Stack",
-    "contact": "Contact"
+    "notes": "Notes",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchToEs": "Switch to Spanish",
+    "switchToEn": "Switch to English",
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode",
+    "search": "Search"
   },
   "Hero": {
-    "name": "HAROLD GUERRERO",
-    "title": "Systems & Computer Science Engineer",
-    "role": "Systems Engineer & Software Architect",
+    "firstName": "Harold",
+    "lastName": "Guerrero",
+    "role": "Systems Engineer",
     "areas": "Engineering · AI & LLMs · Data · Software",
     "portfolio": "Portfolio",
     "location": "Cali, Colombia",
     "hook": "Transforming complex logic into precise, scalable, and aesthetically impeccable systems.",
-    "scroll": "Scroll to explore"
+    "scroll": "Scroll to explore",
+    "available": "Available for new projects",
+    "viewProjects": "View projects",
+    "downloadCv": "Download CV"
   },
   "About": {
-    "title": "About Me",
+    "title": "About me",
     "description": "My logical approach and passion for structured code drive me to architect scalable solutions. I blend engineering precision with an eye for dark, minimalist design, creating seamless experiences where hardware meets software.",
-    "profile": "Profile Data",
+    "profile": "Profile data",
     "roleLabel": "Role",
     "role": "Systems Engineer",
     "focusLabel": "Focus",
-    "focus": "Frontend & Architecture",
+    "focus": "Software, Data & AI",
     "locationLabel": "Location",
-    "location": "Global"
+    "location": "Cali, Colombia",
+    "emailLabel": "Email"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Things I've built, from algorithms to web products.",
+    "viewAll": "View all projects",
+    "viewProject": "View project",
+    "code": "Code",
+    "demo": "Demo",
+    "inProgress": "In progress",
+    "all": "All",
+    "back": "All projects",
+    "pageDescription": "All projects by Harold Guerrero: software, algorithms, data and web.",
+    "empty": "No projects with this tag."
   },
   "Experience": {
     "title": "Experience",
-    "role1": "Frontend Architect",
-    "desc1": "Designed and led the implementation of scalable frontend architectures.",
-    "year1": "2023 - Present",
-    "role2": "Systems Engineer",
-    "desc2": "Optimized complex data flows and backend integrations.",
-    "year2": "2020 - 2023"
+    "items": [
+      {
+        "role": "Frontend Architect",
+        "period": "2023 — Present",
+        "description": "Designed and led the implementation of scalable frontend architectures."
+      },
+      {
+        "role": "Systems Engineer",
+        "period": "2020 — 2023",
+        "description": "Optimized complex data flows and backend integrations."
+      }
+    ]
   },
   "Stack": {
-    "title": "Tech Stack"
+    "title": "Tech Stack",
+    "subtitle": "The tools I work with every day.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Data & Languages",
+      "tools": "DevOps & Tools"
+    }
+  },
+  "GitHub": {
+    "title": "GitHub activity",
+    "subtitle": "Live data from my public profile.",
+    "repos": "Repositories",
+    "stars": "Stars",
+    "languages": "Top languages",
+    "recent": "Recently updated",
+    "viewProfile": "View GitHub profile",
+    "noDescription": "No description"
+  },
+  "Notes": {
+    "title": "Notes",
+    "subtitle": "What I'm learning, written short.",
+    "viewAll": "View all notes",
+    "back": "All notes",
+    "pageDescription": "Notes and articles by Harold Guerrero about software, data and engineering."
   },
   "Contact": {
     "title": "Contact",
@@ -44,12 +106,31 @@
     "nameLabel": "Name",
     "emailLabel": "Email",
     "messageLabel": "Message",
-    "send": "Send Message",
-    "email": "Email",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent! I'll get back to you soon.",
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "message": "The message must be at least 10 characters long.",
+      "generic": "The message couldn't be sent. Write to me directly at {email}."
+    }
+  },
+  "Command": {
+    "placeholder": "Type a command or search…",
+    "empty": "No results.",
+    "navigate": "Navigate",
+    "actions": "Actions",
+    "links": "Links",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Cambiar a español",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "hint": "to open"
   },
   "Footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, Tailwind and MDX.",
+    "backToTop": "Back to top"
   }
 }

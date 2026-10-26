@@ -1,0 +1,27 @@
+export const metadata = {
+  title: 'Personal portfolio',
+  summary: 'This site: a bilingual portfolio with light/dark mode, MDX content and polished animations.',
+  date: '2026-10-26',
+  tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MDX'],
+  repo: 'https://github.com/Haroldg1020/portafolio-harold',
+  demo: 'https://portafolio-harold.vercel.app',
+  featured: true,
+  status: 'in-progress',
+}
+
+## The challenge
+
+I wanted my own place to show what I know and what I build, and it had to be easy to maintain: adding a new project shouldn't mean touching components.
+
+## The solution
+
+- **Next.js 16 (App Router)** with Server Components, shipping minimal JavaScript to the browser.
+- **next-intl** so everything is available in Spanish and English, under `/es` and `/en`.
+- **Projects and notes in MDX**: each project is a file with its metadata and its story.
+- **Tailwind CSS 4** with custom color tokens for light and dark mode.
+- **Motion** and **Lenis** for animations and smooth scrolling, respecting `prefers-reduced-motion`.
+- A working contact form built with **Server Actions** and **Resend**.
+
+## What I learned
+
+To treat the site as a product: per-language SEO, generated Open Graph images, keyboard navigation (try <kbd>Ctrl</kbd> + <kbd>K</kbd>) and performance measured with Vercel Speed Insights.

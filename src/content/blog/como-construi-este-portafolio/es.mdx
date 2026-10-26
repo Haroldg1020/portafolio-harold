@@ -1,0 +1,24 @@
+export const metadata = {
+  title: 'Cómo construí este portafolio',
+  summary: 'Las decisiones técnicas detrás de este sitio: Server Components, MDX, i18n y animaciones que respetan al usuario.',
+  date: '2026-10-26',
+  tags: ['Next.js', 'Diseño'],
+}
+
+Este portafolio empezó como una sola página con todo el contenido escrito a mano dentro de los componentes. Funcionaba, pero cada cambio de texto significaba tocar código. Estas son las decisiones que tomé para que creciera conmigo.
+
+## Contenido como archivos
+
+Cada proyecto y cada nota es un archivo `.mdx` con sus metadatos al inicio. Para publicar algo nuevo solo creo una carpeta con `es.mdx` y `en.mdx` y agrego su nombre a una lista.
+
+## Menos JavaScript en el navegador
+
+Las secciones se renderizan en el servidor. Solo las piezas interactivas, como el menú, el cambio de tema, el formulario y la paleta de comandos, viajan como JavaScript al cliente.
+
+## Animaciones con respeto
+
+Las animaciones usan Motion y el scroll suave usa Lenis, pero ambos se desactivan si el sistema pide reducir el movimiento.
+
+## Próximos pasos
+
+Seguir sumando proyectos y escribir aquí lo que voy aprendiendo.

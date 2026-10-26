@@ -1,21 +1,27 @@
-"use client";
-
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import * as motion from 'motion/react-client';
+import { site } from '@/config/site';
 
 export default function About() {
   const t = useTranslations('About');
 
+  const rows = [
+    { label: t('roleLabel'), value: t('role') },
+    { label: t('focusLabel'), value: t('focus') },
+    { label: t('locationLabel'), value: t('location') },
+  ];
+
   return (
-    <section id="about" className="py-20 md:py-24 px-6 max-w-6xl mx-auto min-h-screen flex items-center">
+    <section id="about" className="py-20 md:py-24 px-6 max-w-6xl mx-auto min-h-screen flex items-center scroll-mt-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.05 }}
           transition={{ duration: 0.6 }}
         >
+          <p className="text-xs font-mono text-accent mb-3 tracking-widest">01 /</p>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-primary flex items-center gap-4">
             <span className="w-8 md:w-12 h-[1px] bg-primary/20 block"></span>
             {t('title')}
@@ -31,7 +37,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.05 }}
@@ -40,7 +46,7 @@ export default function About() {
         >
           {/* Subtle glow behind the card */}
           <div className="absolute inset-0 bg-black/5 dark:bg-white/5 rounded-2xl blur-xl group-hover:bg-black/10 dark:group-hover:bg-white/10 transition-colors duration-500"></div>
-          
+
           <div className="relative glass-dark p-6 sm:p-8 rounded-2xl metal-edge shadow-sm">
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-subtle">
               <h3 className="text-xl font-medium text-primary">{t('profile')}</h3>
@@ -48,21 +54,23 @@ export default function About() {
                 <span className="text-xs font-bold text-secondary">HG</span>
               </div>
             </div>
-            
-            <ul className="space-y-6">
-              <li className="flex justify-between items-center">
-                <span className="text-muted text-sm">{t('roleLabel')}</span>
-                <span className="text-primary font-medium">{t('role')}</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span className="text-muted text-sm">{t('focusLabel')}</span>
-                <span className="text-primary font-medium">{t('focus')}</span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span className="text-muted text-sm">{t('locationLabel')}</span>
-                <span className="text-primary font-medium">{t('location')}</span>
-              </li>
-            </ul>
+
+            <dl className="space-y-6">
+              {rows.map((row) => (
+                <div key={row.label} className="flex justify-between items-center gap-4">
+                  <dt className="text-muted text-sm">{row.label}</dt>
+                  <dd className="text-primary font-medium text-right">{row.value}</dd>
+                </div>
+              ))}
+              <div className="flex justify-between items-center gap-4">
+                <dt className="text-muted text-sm">{t('emailLabel')}</dt>
+                <dd className="text-right min-w-0">
+                  <a href={`mailto:${site.email}`} className="text-primary font-medium hover:text-accent transition-colors break-all">
+                    {site.email}
+                  </a>
+                </dd>
+              </div>
+            </dl>
           </div>
         </motion.div>
 

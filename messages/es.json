@@ -1,42 +1,104 @@
 {
+  "Metadata": {
+    "title": "Harold Guerrero · Ingeniero de Sistemas",
+    "description": "Portafolio de Harold Guerrero, Ingeniero de Sistemas en Cali, Colombia. Proyectos, notas y experiencia en software, datos e IA.",
+    "ogRole": "Ingeniero de Sistemas · Software · Datos · IA"
+  },
   "Navigation": {
+    "home": "Inicio",
     "about": "Acerca",
+    "projects": "Proyectos",
     "experience": "Experiencia",
     "stack": "Stack",
-    "contact": "Contacto"
+    "notes": "Notas",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchToEs": "Cambiar a español",
+    "switchToEn": "Cambiar a inglés",
+    "toLight": "Cambiar a modo claro",
+    "toDark": "Cambiar a modo oscuro",
+    "search": "Buscar"
   },
   "Hero": {
-    "name": "HAROLD GUERRERO",
-    "title": "Ingeniero de Sistemas & Ciencias de la Computación",
-    "role": "Ingeniero de Sistemas & Arquitecto de Software",
+    "firstName": "Harold",
+    "lastName": "Guerrero",
+    "role": "Ingeniero de Sistemas",
     "areas": "Ingeniería · IA & LLMs · Datos · Software",
     "portfolio": "Portafolio",
     "location": "Cali, Colombia",
     "hook": "Transformando lógica compleja en sistemas precisos, escalables y estéticamente impecables.",
-    "scroll": "Scroll para explorar"
+    "scroll": "Scroll para explorar",
+    "available": "Disponible para nuevos proyectos",
+    "viewProjects": "Ver proyectos",
+    "downloadCv": "Descargar CV"
   },
   "About": {
     "title": "Acerca de",
     "description": "Mi enfoque lógico y pasión por el código estructurado me impulsan a diseñar soluciones escalables. Combino la precisión de la ingeniería con un ojo para el diseño oscuro y minimalista, creando experiencias fluidas donde el hardware se encuentra con el software.",
-    "profile": "Datos del Perfil",
+    "profile": "Datos del perfil",
     "roleLabel": "Rol",
     "role": "Ingeniero de Sistemas",
     "focusLabel": "Enfoque",
-    "focus": "Frontend & Arquitectura",
+    "focus": "Software, Datos & IA",
     "locationLabel": "Ubicación",
-    "location": "Global"
+    "location": "Cali, Colombia",
+    "emailLabel": "Correo"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "subtitle": "Cosas que he construido, desde algoritmos hasta productos web.",
+    "viewAll": "Ver todos los proyectos",
+    "viewProject": "Ver proyecto",
+    "code": "Código",
+    "demo": "Demo",
+    "inProgress": "En progreso",
+    "all": "Todos",
+    "back": "Todos los proyectos",
+    "pageDescription": "Todos los proyectos de Harold Guerrero: software, algoritmos, datos y web.",
+    "empty": "No hay proyectos con esta etiqueta."
   },
   "Experience": {
     "title": "Experiencia",
-    "role1": "Arquitecto Frontend",
-    "desc1": "Diseñé y lideré la implementación de arquitecturas frontend escalables.",
-    "year1": "2023 - Presente",
-    "role2": "Ingeniero de Sistemas",
-    "desc2": "Optimicé flujos de datos complejos e integraciones backend.",
-    "year2": "2020 - 2023"
+    "items": [
+      {
+        "role": "Arquitecto Frontend",
+        "period": "2023 — Presente",
+        "description": "Diseñé y lideré la implementación de arquitecturas frontend escalables."
+      },
+      {
+        "role": "Ingeniero de Sistemas",
+        "period": "2020 — 2023",
+        "description": "Optimicé flujos de datos complejos e integraciones backend."
+      }
+    ]
   },
   "Stack": {
-    "title": "Tech Stack"
+    "title": "Tech Stack",
+    "subtitle": "Las herramientas con las que trabajo a diario.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Datos & Lenguajes",
+      "tools": "DevOps & Herramientas"
+    }
+  },
+  "GitHub": {
+    "title": "Actividad en GitHub",
+    "subtitle": "Datos en vivo de mi perfil público.",
+    "repos": "Repositorios",
+    "stars": "Estrellas",
+    "languages": "Lenguajes principales",
+    "recent": "Actualizados recientemente",
+    "viewProfile": "Ver perfil en GitHub",
+    "noDescription": "Sin descripción"
+  },
+  "Notes": {
+    "title": "Notas",
+    "subtitle": "Lo que voy aprendiendo, escrito en corto.",
+    "viewAll": "Ver todas las notas",
+    "back": "Todas las notas",
+    "pageDescription": "Notas y artículos de Harold Guerrero sobre software, datos e ingeniería."
   },
   "Contact": {
     "title": "Contacto",
@@ -44,12 +106,31 @@
     "nameLabel": "Nombre",
     "emailLabel": "Correo",
     "messageLabel": "Mensaje",
-    "send": "Enviar Mensaje",
-    "email": "Email",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "¡Mensaje enviado! Te responderé pronto.",
+    "errors": {
+      "name": "Escribe tu nombre.",
+      "email": "Escribe un correo válido.",
+      "message": "El mensaje debe tener al menos 10 caracteres.",
+      "generic": "No se pudo enviar el mensaje. Escríbeme directamente a {email}."
+    }
+  },
+  "Command": {
+    "placeholder": "Escribe un comando o busca…",
+    "empty": "Sin resultados.",
+    "navigate": "Navegar",
+    "actions": "Acciones",
+    "links": "Enlaces",
+    "toggleTheme": "Cambiar tema",
+    "switchLanguage": "Switch to English",
+    "copyEmail": "Copiar correo",
+    "emailCopied": "Correo copiado",
+    "hint": "para abrir"
   },
   "Footer": {
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con Next.js, Tailwind y MDX.",
+    "backToTop": "Volver arriba"
   }
 }
