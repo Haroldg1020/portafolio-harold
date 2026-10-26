@@ -1,0 +1,24 @@
+export const metadata = {
+  title: 'How I built this portfolio',
+  summary: 'The technical decisions behind this site: Server Components, MDX, i18n and animations that respect the user.',
+  date: '2026-10-26',
+  tags: ['Next.js', 'Design'],
+}
+
+This portfolio started as a single page with all its content hard-coded inside components. It worked, but every text change meant touching code. These are the decisions I made so it can grow with me.
+
+## Content as files
+
+Each project and note is an `.mdx` file with its metadata at the top. To publish something new I just create a folder with `es.mdx` and `en.mdx` and add its name to a list.
+
+## Less JavaScript in the browser
+
+Sections are rendered on the server. Only the interactive pieces, like the menu, the theme switch, the form and the command palette, ship JavaScript to the client.
+
+## Animations that respect you
+
+Animations use Motion and smooth scrolling uses Lenis, but both turn off when the system asks for reduced motion.
+
+## Next steps
+
+Keep adding projects and write here about what I learn.

@@ -1,0 +1,28 @@
+export const metadata = {
+  title: 'Algoritmos de planificación de procesos',
+  summary: 'Implementación en C++ de FCFS, SJF, Round Robin y STCF para simular cómo un sistema operativo reparte la CPU.',
+  date: '2025-09-15',
+  tags: ['C++', 'Sistemas Operativos', 'Algoritmos'],
+  repo: 'https://github.com/Haroldg1020/scheduling',
+  featured: true,
+  status: 'done',
+}
+
+## El reto
+
+Entender en la práctica cómo un sistema operativo decide qué proceso usa la CPU, y cómo cada política afecta los tiempos de espera y de respuesta.
+
+## La solución
+
+Implementé cuatro algoritmos de planificación, cada uno como un programa independiente que lee una lista de procesos (tiempo de llegada y ráfaga) y calcula su ejecución:
+
+- **FCFS** (First Come, First Served): atiende en estricto orden de llegada, sin expropiación.
+- **SJF** (Shortest Job First): elige el trabajo más corto disponible, no expropiativo.
+- **Round Robin**: turnos con un *quantum* configurable.
+- **STCF / PSJF**: versión expropiativa de SJF; el proceso con menor tiempo restante toma la CPU.
+
+El repositorio incluye ejemplos de entrada para comparar los resultados de cada algoritmo.
+
+## Qué aprendí
+
+Los compromisos entre equidad, tiempo de respuesta y aprovechamiento de la CPU, y cómo modelar eventos en el tiempo con estructuras de datos sencillas.

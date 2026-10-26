@@ -1,14 +1,16 @@
+import type {NextConfig} from 'next';
+import createMDX from '@next/mdx';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
+const withMDX = createMDX();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  allowedDevOrigins: [
-    '192.168.1.2',
-    '192.168.1.2:3000',
-    'localhost:3000',
-  ],
+const nextConfig: NextConfig = {
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  allowedDevOrigins: ['192.168.1.2', 'localhost'],
+  experimental: {
+    viewTransition: true,
+  },
 };
 
-export default withNextIntl(nextConfig);
+export default withNextIntl(withMDX(nextConfig));
