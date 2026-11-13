@@ -7,6 +7,13 @@ export const site = {
   github: {
     username: 'Haroldg1020',
     url: 'https://github.com/Haroldg1020',
+    // Tarjetas de "Actividad en GitHub": un repo público ({ repo }) o un proyecto del portafolio ({ project })
+    showcase: [
+      { project: 'novadiligencia' },
+      { project: 'undersound' },
+      { repo: 'portafolio-harold' },
+      { repo: 'Vivero' },
+    ] as ({ repo: string } | { project: string })[],
   },
   linkedin: 'https://www.linkedin.com/in/harold-guerrero-a9a293258',
   // Número de WhatsApp con indicativo de país y sin espacios ni '+', ej. '573001234567'.

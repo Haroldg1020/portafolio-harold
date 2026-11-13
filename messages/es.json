@@ -91,9 +91,9 @@
     "repos": "Repositorios",
     "stars": "Estrellas",
     "languages": "Lenguajes principales",
-    "recent": "Actualizados recientemente",
     "viewProfile": "Ver perfil en GitHub",
-    "noDescription": "Sin descripción"
+    "noDescription": "Sin descripción",
+    "featured": "Proyectos destacados"
   },
   "Notes": {
     "title": "Notas",

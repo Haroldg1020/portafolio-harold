@@ -14,7 +14,7 @@ export type GitHubStats = {
   repoCount: number;
   stars: number;
   languages: { name: string; percent: number }[];
-  recent: { name: string; url: string; description: string | null; language: string | null; pushedAt: string }[];
+  repos: { name: string; url: string; description: string | null; language: string | null; pushedAt: string }[];
 };
 
 /** Public profile stats, cached for an hour. Returns null if GitHub is unreachable or rate-limited. */
@@ -41,7 +41,7 @@ export async function getGitHubStats(): Promise<GitHubStats | null> {
         .sort((a, b) => b[1] - a[1])
         .slice(0, 5)
         .map(([name, count]) => ({ name, percent: Math.round((count / withLanguage) * 100) })),
-      recent: repos.slice(0, 4).map((r) => ({
+      repos: repos.map((r) => ({
         name: r.name,
         url: r.html_url,
         description: r.description,
