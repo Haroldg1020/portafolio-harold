@@ -1,0 +1,26 @@
+export const metadata = {
+  title: 'Undersound',
+  summary: 'Plataforma para descubrir música underground: los artistas suben sus canciones, la comunidad las escucha y los artistas pueden pagar para destacarlas.',
+  date: '2026-08-10',
+  tags: ['Next.js', 'Supabase', 'Stripe', 'TypeScript', 'Tailwind CSS'],
+  featured: true,
+}
+
+## El reto
+
+Los artistas independientes tienen poco espacio en las plataformas grandes. La idea de Undersound es una red social de música underground donde cualquiera puede publicar su trabajo y construir una audiencia.
+
+## La solución
+
+Una aplicación web completa construida con **Next.js 16**, **Supabase** y **Stripe**:
+
+- **Cuentas de usuario** con registro, inicio de sesión y perfiles de artista.
+- **Subida de canciones** y álbumes, con un **reproductor de audio** que sigue sonando mientras navegas.
+- **Feed y exploración** con búsqueda y filtros por género.
+- **Funciones sociales:** seguir artistas, dar like, comentar y recibir notificaciones.
+- **Monetización:** pagos con Stripe para destacar una canción (*boost*), plan Pro y webhooks que confirman cada pago.
+- **Moderación:** los usuarios pueden reportar contenido inapropiado.
+
+## Qué aprendí
+
+A diseñar una base de datos relacional con seguridad a nivel de fila, a manejar pagos reales de forma segura con webhooks y a construir una experiencia de reproducción continua en una app de React.

@@ -18,7 +18,8 @@
     "switchToEn": "Cambiar a inglés",
     "toLight": "Cambiar a modo claro",
     "toDark": "Cambiar a modo oscuro",
-    "search": "Buscar"
+    "search": "Buscar",
+    "services": "Servicios"
   },
   "Hero": {
     "firstName": "Harold",
@@ -31,7 +32,8 @@
     "scroll": "Scroll para explorar",
     "available": "Disponible para nuevos proyectos",
     "viewProjects": "Ver proyectos",
-    "downloadCv": "Descargar CV"
+    "downloadCv": "Descargar CV",
+    "hireMe": "Contrátame"
   },
   "About": {
     "title": "Acerca de",
@@ -132,5 +134,193 @@
     "rights": "Todos los derechos reservados.",
     "builtWith": "Hecho con Next.js, Tailwind y MDX.",
     "backToTop": "Volver arriba"
+  },
+  "Services": {
+    "metaTitle": "Servicios: páginas web, tiendas online y automatización con IA en Cali",
+    "metaDescription": "Desarrollo de páginas web, tiendas online, chatbots con IA y software a medida para negocios en Cali y toda Colombia. Diagnóstico gratis y precios claros.",
+    "eyebrow": "Servicios · Desarrollo web e IA",
+    "titleLead": "Más clientes,",
+    "titleAccent": "menos trabajo manual.",
+    "subtitle": "Creo páginas web, tiendas online, automatizaciones con IA y software a medida para negocios que quieren crecer. Hablas directo con el ingeniero que lo construye, sin agencias ni intermediarios.",
+    "ctaWhatsapp": "Cotiza por WhatsApp",
+    "ctaPackages": "Ver paquetes",
+    "trust": [
+      "Diagnóstico gratis",
+      "Respuesta en menos de 24 horas",
+      "Pagas por etapas"
+    ],
+    "whatsappMessage": "Hola Harold, estoy interesado en crear una página web.",
+    "whatsappService": "Hola Harold, estoy interesado en: {service}.",
+    "whatsappPlan": "Hola Harold, estoy interesado en el plan {plan}.",
+    "servicesTitle": "Lo que puedo construir para tu negocio",
+    "servicesSubtitle": "Desde tu primera página hasta sistemas que trabajan solos mientras atiendes a tus clientes.",
+    "idealForLabel": "Ideal para",
+    "askAbout": "Preguntar por esto",
+    "items": {
+      "web": {
+        "title": "Páginas web y landing pages",
+        "description": "Un sitio rápido y profesional que explica lo que haces y convierte visitas en mensajes de clientes.",
+        "idealFor": "Profesionales, emprendedores y negocios locales."
+      },
+      "store": {
+        "title": "Tiendas online",
+        "description": "Vende 24/7 con catálogo, carrito y pagos en línea con tarjeta, PSE o Nequi.",
+        "idealFor": "Marcas y negocios que venden productos."
+      },
+      "automation": {
+        "title": "Automatización y chatbots con IA",
+        "description": "Asistentes que responden a tus clientes, agendan citas y eliminan tareas repetitivas.",
+        "idealFor": "Negocios con muchos mensajes o procesos manuales."
+      },
+      "custom": {
+        "title": "Software a medida",
+        "description": "Sistemas de inventario, reservas, citas o paneles internos hechos exactamente para tu operación.",
+        "idealFor": "Empresas que ya no caben en una hoja de Excel."
+      }
+    },
+    "projectsTitle": "Proyectos reales",
+    "projectsSubtitle": "Trabajo hecho para clientes y productos propios, en producción.",
+    "processTitle": "Así trabajamos",
+    "processSubtitle": "Un proceso claro, sin sorpresas, desde la primera conversación hasta después del lanzamiento.",
+    "steps": [
+      {
+        "title": "Diagnóstico gratis",
+        "description": "Una conversación de 20 minutos por WhatsApp o videollamada para entender tu negocio y tus objetivos.",
+        "duration": "Día 1"
+      },
+      {
+        "title": "Propuesta y precio fijo",
+        "description": "Te envío por escrito el alcance, los tiempos y el precio. Sin costos ocultos.",
+        "duration": "24–48 h"
+      },
+      {
+        "title": "Diseño",
+        "description": "Ves cómo quedará tu sitio antes de programarlo y lo ajustamos a tu gusto.",
+        "duration": "2–5 días"
+      },
+      {
+        "title": "Desarrollo",
+        "description": "Lo construyo con tecnología moderna y te muestro avances cada semana.",
+        "duration": "1–4 semanas"
+      },
+      {
+        "title": "Lanzamiento",
+        "description": "Lo publicamos, conectamos tu dominio y te enseño a usarlo.",
+        "duration": "1 día"
+      },
+      {
+        "title": "Soporte",
+        "description": "Te acompaño después de la entrega para que todo siga funcionando.",
+        "duration": "30 días incluidos"
+      }
+    ],
+    "pricingTitle": "Paquetes y precios",
+    "pricingSubtitle": "Elige un punto de partida. Cada propuesta se ajusta a lo que tu negocio necesita.",
+    "from": "Desde",
+    "delivery": "Entrega",
+    "popular": "Más elegido",
+    "choose": "Lo quiero",
+    "customPrice": "A medida",
+    "currencyNote": "Precios de referencia en pesos colombianos (COP). El valor final depende del alcance y queda fijo en la propuesta. El dominio se paga aparte al proveedor.",
+    "maintenance": "Mantenimiento mensual desde {price}: hosting, copias de seguridad, actualizaciones y pequeños cambios.",
+    "plans": {
+      "essential": {
+        "name": "Esencial",
+        "description": "Una landing page de alto impacto para empezar a recibir clientes.",
+        "delivery": "7 a 10 días",
+        "features": [
+          "Una página con diseño a medida",
+          "Adaptada a celular, tablet y computador",
+          "Botón de WhatsApp y formulario de contacto",
+          "SEO básico para aparecer en Google",
+          "Conexión de dominio y publicación",
+          "1 ronda de ajustes"
+        ]
+      },
+      "professional": {
+        "name": "Profesional",
+        "description": "El sitio completo para un negocio que quiere verse grande.",
+        "delivery": "2 a 3 semanas",
+        "features": [
+          "Hasta 6 páginas o secciones",
+          "Blog para posicionarte en Google",
+          "SEO completo y Perfil de Empresa en Google",
+          "Medición de visitas y mensajes recibidos",
+          "Integración con WhatsApp, redes y mapas",
+          "2 rondas de ajustes y 30 días de soporte"
+        ]
+      },
+      "store": {
+        "name": "Tienda online",
+        "description": "Todo lo necesario para vender por internet.",
+        "delivery": "3 a 5 semanas",
+        "features": [
+          "Catálogo con categorías y búsqueda",
+          "Carrito y pagos en línea (Wompi, Mercado Pago o PayU)",
+          "Panel para gestionar productos, pedidos e inventario",
+          "Avisos de pedido por correo",
+          "Capacitación para administrar tu tienda",
+          "30 días de soporte incluidos"
+        ]
+      },
+      "custom": {
+        "name": "IA y software a medida",
+        "description": "Para automatizar procesos o construir un sistema propio.",
+        "delivery": "Según el alcance",
+        "features": [
+          "Chatbots con IA para WhatsApp o tu web",
+          "Automatización de tareas repetitivas",
+          "Sistemas de citas, inventario o reservas",
+          "Integración con las herramientas que ya usas",
+          "Cotización después del diagnóstico gratis"
+        ]
+      }
+    },
+    "whyTitle": "¿Por qué trabajar conmigo?",
+    "why": [
+      {
+        "title": "Hablas directo con quien lo construye",
+        "description": "Sin agencias ni intermediarios: entiendo tu negocio y respondo yo mismo."
+      },
+      {
+        "title": "Rápido y listo para Google",
+        "description": "Uso la misma tecnología que grandes empresas (Next.js), así tu sitio carga en segundos y está optimizado para buscadores desde el primer día."
+      },
+      {
+        "title": "Todo queda a tu nombre",
+        "description": "El dominio, el código y las cuentas son tuyos. No dependes de mí para siempre."
+      }
+    ],
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      {
+        "q": "¿Cuánto tarda mi página?",
+        "a": "Una landing page está lista en 7 a 10 días y un sitio completo en 2 a 3 semanas. Las tiendas y los sistemas a medida dependen del alcance; el tiempo exacto queda en la propuesta."
+      },
+      {
+        "q": "¿Cómo es el pago?",
+        "a": "Pagas el 50 % para iniciar y el 50 % al entregar. Los proyectos grandes se dividen en 3 pagos según las etapas. Recibo transferencia bancaria u otros medios que acordemos."
+      },
+      {
+        "q": "¿El dominio y el hosting están incluidos?",
+        "a": "Te ayudo a comprar el dominio a tu nombre; su costo anual lo pagas directamente al proveedor. El hosting está incluido en el plan de mantenimiento, o lo dejamos configurado en una cuenta tuya."
+      },
+      {
+        "q": "¿Podré hacer cambios yo mismo?",
+        "a": "Sí. Si lo necesitas, configuro un panel para que edites textos, imágenes o productos sin saber programar. Para cambios mayores existe el plan de mantenimiento."
+      },
+      {
+        "q": "¿Qué necesito para empezar?",
+        "a": "Tu logo, los textos y las fotos de tu negocio. Si no los tienes, te ayudo a prepararlos."
+      },
+      {
+        "q": "¿Trabajas con negocios fuera de Cali?",
+        "a": "Sí. Trabajo de forma remota con clientes en toda Colombia y en el exterior."
+      }
+    ],
+    "finalTitle": "¿Tienes una idea? Hablemos hoy.",
+    "finalSubtitle": "Cuéntame qué necesitas y te respondo con una propuesta inicial, sin compromiso.",
+    "floating": "Escríbeme por WhatsApp",
+    "orForm": "o usa el formulario de contacto"
   }
 }

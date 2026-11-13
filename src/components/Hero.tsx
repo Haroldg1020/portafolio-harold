@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import * as motion from 'motion/react-client';
 import { ArrowDown, Download } from 'lucide-react';
 import SectionLink from '@/components/SectionLink';
+import { Link } from '@/i18n/routing';
 import { site } from '@/config/site';
 
 export default function Hero() {
@@ -95,6 +96,12 @@ export default function Hero() {
                 {t('viewProjects')}
                 <ArrowDown size={14} className="transition-transform group-hover:translate-y-0.5" />
               </SectionLink>
+              <Link
+                href="/servicios"
+                className="inline-flex items-center gap-2 rounded-lg border border-subtle bg-black/5 dark:bg-white/5 px-5 py-3 text-xs font-bold tracking-[0.15em] uppercase text-primary hover:border-accent hover:text-accent transition-colors"
+              >
+                {t('hireMe')}
+              </Link>
               {site.cvUrl && (
                 <a
                   href={site.cvUrl}

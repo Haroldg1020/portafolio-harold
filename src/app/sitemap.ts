@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/projects',
     '/blog',
+    '/servicios',
     ...projectSlugs.map((slug) => `/projects/${slug}`),
     ...postSlugs.map((slug) => `/blog/${slug}`),
   ];
