@@ -43,7 +43,7 @@ export async function sendContactMessage(_prev: ContactState, formData: FormData
   const { name, email, message } = parsed.data;
   const { error } = await new Resend(apiKey).emails.send({
     from: process.env.CONTACT_FROM_EMAIL ?? 'Portafolio <onboarding@resend.dev>',
-    to: process.env.CONTACT_TO_EMAIL ?? site.email,
+    to: process.env.CONTACT_TO_EMAIL ?? site.inbox,
     replyTo: email,
     subject: `Nuevo mensaje del portafolio — ${name}`,
     text: `Nombre: ${name}\nCorreo: ${email}\n\n${message}`,

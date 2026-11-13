@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
       {
         source: '/:path*',
         has: [{type: 'host', value: 'portafolio-harold.vercel.app'}],
-        destination: 'https://haroldguerrero.com/:path*',
+        destination: 'https://www.haroldguerrero.com/:path*',
         permanent: true,
       },
     ];
