@@ -11,7 +11,7 @@ export const site = {
   linkedin: 'https://www.linkedin.com/in/harold-guerrero-a9a293258',
   // Número de WhatsApp con indicativo de país y sin espacios ni '+', ej. '573001234567'.
   // Mientras sea null, los botones de WhatsApp llevan al formulario de contacto.
-  whatsapp: null as string | null,
+  whatsapp: '573183043132' as string | null,
   // Muestra la insignia "Disponible para nuevos proyectos" en el hero
   available: true,
   // Sube tu CV a /public y pon la ruta aquí (ej. '/cv-harold-guerrero.pdf') para mostrar el botón
