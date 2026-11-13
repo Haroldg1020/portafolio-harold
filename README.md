@@ -2,7 +2,7 @@
 
 Portafolio personal bilingüe (español / inglés) construido con **Next.js 16**, **React 19**, **Tailwind CSS 4**, **next-intl**, **MDX**, **Motion** y **Lenis**.
 
-🌐 [portafolio-harold.vercel.app](https://portafolio-harold.vercel.app)
+🌐 [haroldguerrero.com](https://www.haroldguerrero.com)
 
 ## Desarrollo
 
@@ -59,7 +59,7 @@ Usa una Server Action que envía el correo con [Resend](https://resend.com):
 
 1. Crea una cuenta en Resend y genera una API key.
 2. En Vercel → Settings → Environment Variables, agrega `RESEND_API_KEY`.
-3. Opcional: `CONTACT_TO_EMAIL` (por defecto el correo de `site.ts`) y `CONTACT_FROM_EMAIL`. Con el remitente de prueba `onboarding@resend.dev`, Resend solo entrega al correo con el que creaste la cuenta. Para usar otro remitente, verifica tu dominio en Resend.
+3. Opcional: `CONTACT_TO_EMAIL` (por defecto `inbox` en `site.ts`) y `CONTACT_FROM_EMAIL`. Con el remitente de prueba `onboarding@resend.dev`, Resend solo entrega al correo con el que creaste la cuenta. Para usar otro remitente, verifica tu dominio en Resend.
 
 Sin la API key, el formulario muestra un mensaje invitando a escribir directamente al correo.
 

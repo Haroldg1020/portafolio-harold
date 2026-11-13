@@ -1,8 +1,11 @@
 // Datos personales y enlaces usados en todo el sitio. Edita aquí, no en los componentes.
 export const site = {
   name: 'Harold Guerrero',
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portafolio-harold.vercel.app').replace(/\/$/, ''),
-  email: 'hguerrero1020@gmail.com',
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.haroldguerrero.com').replace(/\/$/, ''),
+  // Correo público que se muestra en el sitio (Cloudflare Email Routing lo reenvía a tu Gmail)
+  email: 'hola@haroldguerrero.com',
+  // A dónde llegan los mensajes del formulario de contacto (no se muestra en el sitio)
+  inbox: 'hguerrero1020@gmail.com',
   location: 'Cali, Colombia',
   github: {
     username: 'Haroldg1020',
