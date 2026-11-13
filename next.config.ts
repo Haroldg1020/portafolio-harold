@@ -11,6 +11,17 @@ const nextConfig: NextConfig = {
   experimental: {
     viewTransition: true,
   },
+  async redirects() {
+    // Send visitors of the old Vercel address to the custom domain (preview URLs are unaffected)
+    return [
+      {
+        source: '/:path*',
+        has: [{type: 'host', value: 'portafolio-harold.vercel.app'}],
+        destination: 'https://haroldguerrero.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(withMDX(nextConfig));

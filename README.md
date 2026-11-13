@@ -2,7 +2,7 @@
 
 Portafolio personal bilingüe (español / inglés) construido con **Next.js 16**, **React 19**, **Tailwind CSS 4**, **next-intl**, **MDX**, **Motion** y **Lenis**.
 
-🌐 [portafolio-harold.vercel.app](https://portafolio-harold.vercel.app)
+🌐 [haroldguerrero.com](https://haroldguerrero.com)
 
 ## Desarrollo
 

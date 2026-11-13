@@ -1,7 +1,7 @@
 // Datos personales y enlaces usados en todo el sitio. Edita aquí, no en los componentes.
 export const site = {
   name: 'Harold Guerrero',
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portafolio-harold.vercel.app').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://haroldguerrero.com').replace(/\/$/, ''),
   email: 'hguerrero1020@gmail.com',
   location: 'Cali, Colombia',
   github: {
