@@ -149,9 +149,9 @@
       "Reply within 24 hours",
       "Pay in stages"
     ],
-    "whatsappMessage": "Hi Harold, I'm interested in building a website.",
-    "whatsappService": "Hi Harold, I'm interested in: {service}.",
-    "whatsappPlan": "Hi Harold, I'm interested in the {plan} plan.",
+    "whatsappMessage": "Hola Harold, estoy interesado en construir una página web.",
+    "whatsappService": "Hola Harold, estoy interesado en: {service}.",
+    "whatsappPlan": "Hola Harold, estoy interesado en el plan {plan}.",
     "servicesTitle": "What I can build for your business",
     "servicesSubtitle": "From your first website to systems that run on their own while you serve your customers.",
     "idealForLabel": "Ideal for",
