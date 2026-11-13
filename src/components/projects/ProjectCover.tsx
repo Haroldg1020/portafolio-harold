@@ -25,6 +25,12 @@ export default function ProjectCover({ project, className = '', priority }: Proj
         ) : (
           <GeneratedCover project={project} />
         )}
+        {!project.cover && project.logo && (
+          <div className="absolute inset-0">
+            <Image src={project.logo.light} alt={project.title} fill unoptimized className="object-contain p-[12%] dark:hidden" />
+            <Image src={project.logo.dark} alt={project.title} fill unoptimized className="object-contain p-[12%] hidden dark:block" />
+          </div>
+        )}
       </div>
     </ViewTransition>
   );
@@ -51,9 +57,11 @@ function GeneratedCover({ project }: { project: Project }) {
       />
       <div className="absolute -top-1/3 -right-1/4 w-2/3 aspect-square rounded-full bg-accent/25 blur-3xl transition-transform duration-700 group-hover:scale-125" />
       <div className="absolute -bottom-1/3 -left-1/4 w-1/2 aspect-square rounded-full bg-black/10 dark:bg-white/10 blur-3xl" />
-      <span className="absolute bottom-2 right-4 text-[7rem] leading-none font-black tracking-tighter text-outline select-none">
-        {monogram}
-      </span>
+      {!project.logo && (
+        <span className="absolute bottom-2 right-4 text-[7rem] leading-none font-black tracking-tighter text-outline select-none">
+          {monogram}
+        </span>
+      )}
       <span className="absolute top-4 left-4 font-mono text-[10px] tracking-[0.2em] uppercase text-muted">
         {project.tags[0]}
       </span>

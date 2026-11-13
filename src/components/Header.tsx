@@ -51,6 +51,7 @@ export default function Header() {
 
   const isHome = pathname === '/';
   const activeSection = useActiveSection(isHome);
+  const isServices = pathname.startsWith('/servicios');
   const currentPage: SectionId | null = pathname.startsWith('/projects')
     ? 'projects'
     : pathname.startsWith('/blog')
@@ -175,6 +176,16 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3 md:gap-4">
+            <Link
+              href="/servicios"
+              aria-current={isServices ? 'page' : undefined}
+              className={`hidden sm:inline-flex items-center h-8 px-3 rounded-lg text-xs font-bold tracking-widest uppercase transition-colors ${
+                isServices ? 'bg-accent text-white' : 'border border-accent/40 text-accent hover:bg-accent hover:text-white'
+              }`}
+            >
+              {t('services')}
+            </Link>
+
             {/* Command palette trigger */}
             <button
               type="button"
@@ -237,6 +248,13 @@ export default function Header() {
             className="fixed inset-0 z-40 bg-page/95 backdrop-blur-2xl px-6 pt-28 pb-10 flex flex-col justify-between lg:hidden overflow-y-auto"
           >
             <nav className="flex flex-col gap-6">
+              <Link
+                href="/servicios"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center rounded-lg bg-accent py-3 text-sm font-bold tracking-widest uppercase text-white"
+              >
+                {t('services')}
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.id}

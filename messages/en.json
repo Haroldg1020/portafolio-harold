@@ -18,7 +18,8 @@
     "switchToEn": "Switch to English",
     "toLight": "Switch to light mode",
     "toDark": "Switch to dark mode",
-    "search": "Search"
+    "search": "Search",
+    "services": "Services"
   },
   "Hero": {
     "firstName": "Harold",
@@ -31,7 +32,8 @@
     "scroll": "Scroll to explore",
     "available": "Available for new projects",
     "viewProjects": "View projects",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "hireMe": "Hire me"
   },
   "About": {
     "title": "About me",
@@ -132,5 +134,193 @@
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js, Tailwind and MDX.",
     "backToTop": "Back to top"
+  },
+  "Services": {
+    "metaTitle": "Services: websites, online stores and AI automation",
+    "metaDescription": "Websites, online stores, AI chatbots and custom software for businesses in Colombia and abroad. Free consultation and clear pricing.",
+    "eyebrow": "Services · Web development & AI",
+    "titleLead": "More customers,",
+    "titleAccent": "less busywork.",
+    "subtitle": "I build websites, online stores, AI automations and custom software for businesses that want to grow. You talk directly to the engineer who builds it, no agencies or middlemen.",
+    "ctaWhatsapp": "Get a quote on WhatsApp",
+    "ctaPackages": "See packages",
+    "trust": [
+      "Free consultation",
+      "Reply within 24 hours",
+      "Pay in stages"
+    ],
+    "whatsappMessage": "Hola Harold, estoy interesado en construir una página web.",
+    "whatsappService": "Hola Harold, estoy interesado en: {service}.",
+    "whatsappPlan": "Hola Harold, estoy interesado en el plan {plan}.",
+    "servicesTitle": "What I can build for your business",
+    "servicesSubtitle": "From your first website to systems that run on their own while you serve your customers.",
+    "idealForLabel": "Ideal for",
+    "askAbout": "Ask about this",
+    "items": {
+      "web": {
+        "title": "Websites and landing pages",
+        "description": "A fast, professional site that explains what you do and turns visits into customer messages.",
+        "idealFor": "Professionals, entrepreneurs and local businesses."
+      },
+      "store": {
+        "title": "Online stores",
+        "description": "Sell 24/7 with a catalog, cart and online payments.",
+        "idealFor": "Brands and businesses that sell products."
+      },
+      "automation": {
+        "title": "AI automation and chatbots",
+        "description": "Assistants that answer your customers, book appointments and remove repetitive tasks.",
+        "idealFor": "Businesses with lots of messages or manual processes."
+      },
+      "custom": {
+        "title": "Custom software",
+        "description": "Inventory, booking or appointment systems and internal dashboards built exactly for how you work.",
+        "idealFor": "Companies that have outgrown spreadsheets."
+      }
+    },
+    "projectsTitle": "Real projects",
+    "projectsSubtitle": "Work for clients and my own products, live in production.",
+    "processTitle": "How we work",
+    "processSubtitle": "A clear process with no surprises, from the first conversation to after launch.",
+    "steps": [
+      {
+        "title": "Free consultation",
+        "description": "A 20-minute chat on WhatsApp or video call to understand your business and goals.",
+        "duration": "Day 1"
+      },
+      {
+        "title": "Proposal and fixed price",
+        "description": "I send you the scope, timeline and price in writing. No hidden costs.",
+        "duration": "24–48 h"
+      },
+      {
+        "title": "Design",
+        "description": "You see how your site will look before it's built, and we adjust it to your taste.",
+        "duration": "2–5 days"
+      },
+      {
+        "title": "Development",
+        "description": "I build it with modern technology and show you progress every week.",
+        "duration": "1–4 weeks"
+      },
+      {
+        "title": "Launch",
+        "description": "We publish it, connect your domain and I show you how to use it.",
+        "duration": "1 day"
+      },
+      {
+        "title": "Support",
+        "description": "I stay with you after delivery to keep everything running.",
+        "duration": "30 days included"
+      }
+    ],
+    "pricingTitle": "Packages and pricing",
+    "pricingSubtitle": "Pick a starting point. Every proposal is tailored to what your business needs.",
+    "from": "From",
+    "delivery": "Delivery",
+    "popular": "Most popular",
+    "choose": "I want this",
+    "customPrice": "Custom",
+    "currencyNote": "Reference prices in Colombian pesos (COP). The final price depends on scope and is fixed in the proposal. The domain is paid separately to the provider.",
+    "maintenance": "Monthly maintenance from {price}: hosting, backups, updates and small changes.",
+    "plans": {
+      "essential": {
+        "name": "Essential",
+        "description": "A high-impact landing page to start getting customers.",
+        "delivery": "7 to 10 days",
+        "features": [
+          "One custom-designed page",
+          "Works on phone, tablet and desktop",
+          "WhatsApp button and contact form",
+          "Basic SEO to show up on Google",
+          "Domain setup and launch",
+          "1 round of revisions"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "The complete site for a business that wants to look big.",
+        "delivery": "2 to 3 weeks",
+        "features": [
+          "Up to 6 pages or sections",
+          "Blog to rank on Google",
+          "Full SEO and Google Business Profile",
+          "Tracking of visits and messages",
+          "WhatsApp, social media and maps integration",
+          "2 rounds of revisions and 30 days of support"
+        ]
+      },
+      "store": {
+        "name": "Online store",
+        "description": "Everything you need to sell online.",
+        "delivery": "3 to 5 weeks",
+        "features": [
+          "Catalog with categories and search",
+          "Cart and online payments (Wompi, Mercado Pago or PayU)",
+          "Dashboard to manage products, orders and stock",
+          "Order notifications by email",
+          "Training to run your store",
+          "30 days of support included"
+        ]
+      },
+      "custom": {
+        "name": "AI & custom software",
+        "description": "To automate processes or build your own system.",
+        "delivery": "Depends on scope",
+        "features": [
+          "AI chatbots for WhatsApp or your website",
+          "Automation of repetitive tasks",
+          "Appointment, inventory or booking systems",
+          "Integration with the tools you already use",
+          "Quote after the free consultation"
+        ]
+      }
+    },
+    "whyTitle": "Why work with me?",
+    "why": [
+      {
+        "title": "You talk to the person who builds it",
+        "description": "No agencies or middlemen: I understand your business and answer you myself."
+      },
+      {
+        "title": "Fast and ready for Google",
+        "description": "I use the same technology as big companies (Next.js), so your site loads in seconds and is search-optimized from day one."
+      },
+      {
+        "title": "Everything is in your name",
+        "description": "The domain, the code and the accounts are yours. You don't depend on me forever."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How long does it take?",
+        "a": "A landing page is ready in 7 to 10 days and a full site in 2 to 3 weeks. Stores and custom systems depend on scope; the exact timeline is in the proposal."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "You pay 50% to start and 50% on delivery. Larger projects are split into 3 payments by stage. I accept bank transfer or other methods we agree on."
+      },
+      {
+        "q": "Are domain and hosting included?",
+        "a": "I help you buy the domain in your name; you pay its yearly cost directly to the provider. Hosting is included in the maintenance plan, or we set it up in an account of yours."
+      },
+      {
+        "q": "Can I make changes myself?",
+        "a": "Yes. If you need it, I set up a dashboard so you can edit text, images or products without coding. Bigger changes are covered by the maintenance plan."
+      },
+      {
+        "q": "What do I need to get started?",
+        "a": "Your logo, copy and photos of your business. If you don't have them, I'll help you prepare them."
+      },
+      {
+        "q": "Do you work with clients outside Colombia?",
+        "a": "Yes. I work remotely with clients across Colombia and abroad."
+      }
+    ],
+    "finalTitle": "Got an idea? Let's talk today.",
+    "finalSubtitle": "Tell me what you need and I'll reply with an initial proposal, no strings attached.",
+    "floating": "Message me on WhatsApp",
+    "orForm": "or use the contact form"
   }
 }

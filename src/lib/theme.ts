@@ -39,7 +39,10 @@ export function setTheme(theme: Theme, origin?: { x: number; y: number }) {
   root.style.setProperty('--vt-x', `${origin?.x ?? window.innerWidth / 2}px`);
   root.style.setProperty('--vt-y', `${origin?.y ?? 0}px`);
   root.classList.add('theme-transition');
-  document.startViewTransition(apply).finished.finally(() => {
+  const transition = document.startViewTransition(apply);
+  // `ready` rejects when the browser skips the animation (e.g. hidden tab); the theme still applies
+  transition.ready.catch(() => {});
+  transition.finished.finally(() => {
     root.classList.remove('theme-transition');
   });
 }

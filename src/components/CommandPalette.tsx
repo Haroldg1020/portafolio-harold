@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, motion } from 'motion/react';
 import { useLenis } from 'lenis/react';
 import {
-  ArrowRight, Copy, FileText, FolderGit2, Globe, Mail, Moon, Search, Sun, User, Briefcase, Layers,
+  ArrowRight, Copy, FileText, FolderGit2, Globe, Mail, Moon, Search, Sun, User, Briefcase, BriefcaseBusiness, Layers,
 } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { usePathname, useRouter } from '@/i18n/routing';
@@ -90,6 +90,13 @@ export default function CommandPalette() {
   const commands = useMemo<Command[]>(() => {
     const otherLocale = locale === 'es' ? 'en' : 'es';
     return [
+      {
+        id: 'services',
+        group: 'navigate',
+        label: tNav('services'),
+        icon: <BriefcaseBusiness size={16} />,
+        run: () => router.push('/servicios'),
+      },
       ...sectionIds.map((id) => ({
         id: `section-${id}`,
         group: 'navigate' as const,

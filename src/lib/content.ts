@@ -14,6 +14,8 @@ export type ProjectMeta = {
   demo?: string;
   /** Image in /public, e.g. '/projects/portafolio/cover.png'. Without it a generated cover is shown. */
   cover?: string;
+  /** Logo shown over the generated cover, one version per theme, e.g. a client's brand */
+  logo?: { light: string; dark: string };
   featured?: boolean;
   status?: 'done' | 'in-progress';
 };
