@@ -7,6 +7,7 @@ export default function About() {
 
   const rows = [
     { label: t('roleLabel'), value: t('role') },
+    { label: t('educationLabel'), value: t('education') },
     { label: t('focusLabel'), value: t('focus') },
     { label: t('locationLabel'), value: t('location') },
   ];

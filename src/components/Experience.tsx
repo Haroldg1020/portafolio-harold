@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import * as motion from 'motion/react-client';
 import SectionHeading from '@/components/SectionHeading';
 
-type ExperienceItem = { role: string; period: string; description: string };
+type ExperienceItem = { role: string; place?: string; period: string; description: string };
 
 export default function Experience() {
   const t = useTranslations('Experience');
@@ -29,8 +29,9 @@ export default function Experience() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 dark:bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/10 transition-colors"></div>
 
               <span className="text-xs text-accent tracking-wider font-semibold font-mono mb-2 block">{exp.period}</span>
-              <h3 className="text-xl font-bold text-primary mb-3">{exp.role}</h3>
-              <p className="text-secondary font-light leading-relaxed">{exp.description}</p>
+              <h3 className="text-xl font-bold text-primary">{exp.role}</h3>
+              {exp.place && <p className="text-sm text-muted mt-1">{exp.place}</p>}
+              <p className="mt-3 text-secondary font-light leading-relaxed">{exp.description}</p>
             </div>
           </motion.li>
         ))}
