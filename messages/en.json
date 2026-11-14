@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "Harold Guerrero · Systems Engineer",
-    "description": "Portfolio of Harold Guerrero, Systems Engineer based in Cali, Colombia. Projects, notes and experience in software, data and AI.",
-    "ogRole": "Systems Engineer · Software · Data · AI"
+    "title": "Harold Guerrero · Software developer in Cali, Colombia",
+    "description": "Portfolio of Harold Guerrero, software developer and Systems and Computer Engineering student at Javeriana University Cali. Websites, AI and programming lessons.",
+    "ogRole": "Software developer · Web · Data · AI"
   },
   "Navigation": {
     "home": "Home",
@@ -24,7 +24,7 @@
   "Hero": {
     "firstName": "Harold",
     "lastName": "Guerrero",
-    "role": "Systems Engineer",
+    "role": "Software developer",
     "areas": "Engineering · AI & LLMs · Data · Software",
     "portfolio": "Portfolio",
     "location": "Cali, Colombia",
@@ -37,15 +37,17 @@
   },
   "About": {
     "title": "About me",
-    "description": "My logical approach and passion for structured code drive me to architect scalable solutions. I blend engineering precision with an eye for dark, minimalist design, creating seamless experiences where hardware meets software.",
+    "description": "I'm in my 9th semester of Systems and Computer Engineering at Pontificia Universidad Javeriana Cali. I work as a freelance developer building websites, apps and automations for businesses, and since 2024 I've been teaching programming, logic, databases and software architecture. I enjoy turning complex problems into clear, fast, well-designed systems.",
     "profile": "Profile data",
     "roleLabel": "Role",
-    "role": "Systems Engineer",
+    "role": "Software developer",
     "focusLabel": "Focus",
-    "focus": "Software, Data & AI",
+    "focus": "Web, Data & AI",
     "locationLabel": "Location",
     "location": "Cali, Colombia",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "educationLabel": "Education",
+    "education": "Systems Eng. · Javeriana Cali"
   },
   "Projects": {
     "title": "Projects",
@@ -61,17 +63,25 @@
     "empty": "No projects with this tag."
   },
   "Experience": {
-    "title": "Experience",
+    "title": "Experience and education",
     "items": [
       {
-        "role": "Frontend Architect",
-        "period": "2023 — Present",
-        "description": "Designed and led the implementation of scalable frontend architectures."
+        "role": "Freelance software developer",
+        "place": "Self-employed",
+        "period": "2026 — Present",
+        "description": "I design and build websites, apps and automations for clients and my own products, such as NovaDiligencia and Undersound: branding, Next.js development, SEO and deployment."
       },
       {
-        "role": "Systems Engineer",
-        "period": "2020 — 2023",
-        "description": "Optimized complex data flows and backend integrations."
+        "role": "Programming tutor",
+        "place": "Tusclases and Superprof",
+        "period": "2024 — Present",
+        "description": "One-on-one lessons in programming, logic, databases and software architecture, tailored to each student's level and goals."
+      },
+      {
+        "role": "Systems and Computer Engineering",
+        "place": "Pontificia Universidad Javeriana Cali",
+        "period": "In progress · 9th semester · expected graduation 2027",
+        "description": "Coursework in algorithms, data structures, operating systems, databases, architecture and software development."
       }
     ]
   },
@@ -141,7 +151,7 @@
     "eyebrow": "Services · Web development & AI",
     "titleLead": "More customers,",
     "titleAccent": "less busywork.",
-    "subtitle": "I build websites, online stores, AI automations and custom software for businesses that want to grow. You talk directly to the engineer who builds it, no agencies or middlemen.",
+    "subtitle": "I build websites, online stores, AI automations and custom software for businesses that want to grow. You talk directly to the person who builds it, no agencies or middlemen.",
     "ctaWhatsapp": "Get a quote on WhatsApp",
     "ctaPackages": "See packages",
     "trust": [

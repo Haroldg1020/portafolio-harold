@@ -19,6 +19,8 @@ export const site = {
     ] as ({ repo: string } | { project: string })[],
   },
   linkedin: 'https://www.linkedin.com/in/harold-guerrero-a9a293258',
+  // Otros perfiles públicos tuyos (Tusclases, Superprof…): ayudan a Google a saber que son la misma persona
+  profiles: [] as string[],
   // Número de WhatsApp con indicativo de país y sin espacios ni '+', ej. '573001234567'.
   // Mientras sea null, los botones de WhatsApp llevan al formulario de contacto.
   whatsapp: '573183043132' as string | null,

@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "Harold Guerrero · Ingeniero de Sistemas",
-    "description": "Portafolio de Harold Guerrero, Ingeniero de Sistemas en Cali, Colombia. Proyectos, notas y experiencia en software, datos e IA.",
-    "ogRole": "Ingeniero de Sistemas · Software · Datos · IA"
+    "title": "Harold Guerrero · Desarrollador de software en Cali",
+    "description": "Portafolio de Harold Guerrero, desarrollador de software y estudiante de Ingeniería de Sistemas y Computación en la Javeriana Cali. Páginas web, IA y clases de programación.",
+    "ogRole": "Desarrollador de software · Web · Datos · IA"
   },
   "Navigation": {
     "home": "Inicio",
@@ -24,7 +24,7 @@
   "Hero": {
     "firstName": "Harold",
     "lastName": "Guerrero",
-    "role": "Ingeniero de Sistemas",
+    "role": "Desarrollador de software",
     "areas": "Ingeniería · IA & LLMs · Datos · Software",
     "portfolio": "Portafolio",
     "location": "Cali, Colombia",
@@ -37,15 +37,17 @@
   },
   "About": {
     "title": "Acerca de",
-    "description": "Mi enfoque lógico y pasión por el código estructurado me impulsan a diseñar soluciones escalables. Combino la precisión de la ingeniería con un ojo para el diseño oscuro y minimalista, creando experiencias fluidas donde el hardware se encuentra con el software.",
+    "description": "Estoy en 9.º semestre de Ingeniería de Sistemas y Computación en la Pontificia Universidad Javeriana Cali. Trabajo como desarrollador freelance creando páginas web, aplicaciones y automatizaciones para negocios, y desde 2024 enseño programación, lógica, bases de datos y arquitectura de software. Me gusta convertir problemas complejos en sistemas claros, rápidos y bien diseñados.",
     "profile": "Datos del perfil",
     "roleLabel": "Rol",
-    "role": "Ingeniero de Sistemas",
+    "role": "Desarrollador de software",
     "focusLabel": "Enfoque",
-    "focus": "Software, Datos & IA",
+    "focus": "Web, Datos & IA",
     "locationLabel": "Ubicación",
     "location": "Cali, Colombia",
-    "emailLabel": "Correo"
+    "emailLabel": "Correo",
+    "educationLabel": "Formación",
+    "education": "Ing. de Sistemas · Javeriana Cali"
   },
   "Projects": {
     "title": "Proyectos",
@@ -61,17 +63,25 @@
     "empty": "No hay proyectos con esta etiqueta."
   },
   "Experience": {
-    "title": "Experiencia",
+    "title": "Experiencia y formación",
     "items": [
       {
-        "role": "Arquitecto Frontend",
-        "period": "2023 — Presente",
-        "description": "Diseñé y lideré la implementación de arquitecturas frontend escalables."
+        "role": "Desarrollador de software freelance",
+        "place": "Independiente",
+        "period": "2026 — Presente",
+        "description": "Diseño y desarrollo sitios web, aplicaciones y automatizaciones para clientes y productos propios, como NovaDiligencia y Undersound: identidad visual, desarrollo en Next.js, SEO y publicación."
       },
       {
-        "role": "Ingeniero de Sistemas",
-        "period": "2020 — 2023",
-        "description": "Optimicé flujos de datos complejos e integraciones backend."
+        "role": "Profesor de programación",
+        "place": "Tusclases y Superprof",
+        "period": "2024 — Presente",
+        "description": "Clases personalizadas de programación, lógica, bases de datos y arquitectura de software, adaptadas al nivel y los objetivos de cada estudiante."
+      },
+      {
+        "role": "Ingeniería de Sistemas y Computación",
+        "place": "Pontificia Universidad Javeriana Cali",
+        "period": "En curso · 9.º semestre · grado previsto en 2027",
+        "description": "Formación en algoritmos, estructuras de datos, sistemas operativos, bases de datos, arquitectura y desarrollo de software."
       }
     ]
   },
@@ -141,7 +151,7 @@
     "eyebrow": "Servicios · Desarrollo web e IA",
     "titleLead": "Más clientes,",
     "titleAccent": "menos trabajo manual.",
-    "subtitle": "Creo páginas web, tiendas online, automatizaciones con IA y software a medida para negocios que quieren crecer. Hablas directo con el ingeniero que lo construye, sin agencias ni intermediarios.",
+    "subtitle": "Creo páginas web, tiendas online, automatizaciones con IA y software a medida para negocios que quieren crecer. Hablas directo con quien lo construye, sin agencias ni intermediarios.",
     "ctaWhatsapp": "Cotiza por WhatsApp",
     "ctaPackages": "Ver paquetes",
     "trust": [
